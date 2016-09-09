@@ -20,6 +20,8 @@
 		04EC4D891D811D7800425CBD /* ZYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D881D811D7800425CBD /* ZYMineViewController.m */; };
 		04EC4D8C1D811DE000425CBD /* ZYDownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D8B1D811DE000425CBD /* ZYDownLoadViewController.m */; };
 		04EC4D8F1D8126B100425CBD /* ZYCourseNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D8E1D8126B100425CBD /* ZYCourseNavBarView.m */; };
+		04EC4D951D819B0A00425CBD /* ZYSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D941D819B0A00425CBD /* ZYSpeechViewController.m */; };
+		24ECCC8D29692AE2F2ACBC96 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E142C2BF9755C0B4E4CEA51A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,11 @@
 		04EC4D8B1D811DE000425CBD /* ZYDownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDownLoadViewController.m; sourceTree = "<group>"; };
 		04EC4D8D1D8126B100425CBD /* ZYCourseNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCourseNavBarView.h; sourceTree = "<group>"; };
 		04EC4D8E1D8126B100425CBD /* ZYCourseNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCourseNavBarView.m; sourceTree = "<group>"; };
+		04EC4D931D819B0A00425CBD /* ZYSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSpeechViewController.h; sourceTree = "<group>"; };
+		04EC4D941D819B0A00425CBD /* ZYSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSpeechViewController.m; sourceTree = "<group>"; };
+		4BBFA3AACD82431C4E1C40BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DAFD73F8F956BAACF38542CF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E142C2BF9755C0B4E4CEA51A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24ECCC8D29692AE2F2ACBC96 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,8 @@
 			children = (
 				040D7F261D810351002C5AB4 /* BDzhuangke */,
 				040D7F251D810351002C5AB4 /* Products */,
+				B6FE4BA1F105044CCBEDB73A /* Pods */,
+				3E944060E4CC601AD39E3B1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +132,8 @@
 			children = (
 				04EC4D841D811D3B00425CBD /* ZYCateTableViewController.h */,
 				04EC4D851D811D3B00425CBD /* ZYCateTableViewController.m */,
+				04EC4D931D819B0A00425CBD /* ZYSpeechViewController.h */,
+				04EC4D941D819B0A00425CBD /* ZYSpeechViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				04EC4D831D81190600425CBD /* PrefixHeader.pch */,
+				0474EF071D826DAB00570AA2 /* Tools */,
 				040D7F6B1D811484002C5AB4 /* Cateroy */,
 				040D7F6C1D811484002C5AB4 /* ExtensionSDK */,
 				040D7F5E1D8113DC002C5AB4 /* AppDelegate.h */,
@@ -277,6 +290,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0474EF071D826DAB00570AA2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3E944060E4CC601AD39E3B1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E142C2BF9755C0B4E4CEA51A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6FE4BA1F105044CCBEDB73A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAFD73F8F956BAACF38542CF /* Pods.debug.xcconfig */,
+				4BBFA3AACD82431C4E1C40BD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 040D7F3B1D810351002C5AB4 /* Build configuration list for PBXNativeTarget "BDzhuangke" */;
 			buildPhases = (
+				F6FA1FDCE98133DE143E08DD /* Check Pods Manifest.lock */,
 				040D7F201D810351002C5AB4 /* Sources */,
 				040D7F211D810351002C5AB4 /* Frameworks */,
 				040D7F221D810351002C5AB4 /* Resources */,
+				437F67E0D505C874572CE8D5 /* Embed Pods Frameworks */,
+				6CA622C1D5011254DB3BCFAC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,6 +382,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		437F67E0D505C874572CE8D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA622C1D5011254DB3BCFAC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6FA1FDCE98133DE143E08DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		040D7F201D810351002C5AB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -354,6 +442,7 @@
 				04EC4D8F1D8126B100425CBD /* ZYCourseNavBarView.m in Sources */,
 				04EC4D891D811D7800425CBD /* ZYMineViewController.m in Sources */,
 				040D7F7C1D81161D002C5AB4 /* ZYNavigationController.m in Sources */,
+				04EC4D951D819B0A00425CBD /* ZYSpeechViewController.m in Sources */,
 				040D7F671D8113DC002C5AB4 /* AppDelegate.m in Sources */,
 				04EC4D821D81186F00425CBD /* ZYTabBarVc.m in Sources */,
 				04EC4D8C1D811DE000425CBD /* ZYDownLoadViewController.m in Sources */,
@@ -468,6 +557,7 @@
 		};
 		040D7F3C1D810351002C5AB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAFD73F8F956BAACF38542CF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -484,6 +574,7 @@
 		};
 		040D7F3D1D810351002C5AB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBFA3AACD82431C4E1C40BD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

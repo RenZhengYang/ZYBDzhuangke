@@ -8,7 +8,7 @@
 
 #import "ZYCateTableViewController.h"
 #import "ZYCourseNavBarView.h"
-
+#import "ZYSpeechViewController.h"
  static NSString *resuID = @"cell";
 @interface ZYCateTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 /**tableView*/
@@ -26,7 +26,8 @@
     [self setNavBar];
     //    初始化tableView
     [self initTableView];
-    
+    //     隐藏NavBar
+    self.navigationController.navigationBar.hidden = YES;
        }
 
 /**设置自定义NavBar*/
@@ -39,16 +40,13 @@
     [navBarView setCallBackNameBtn:^{
         
         NSLog(@"左边按钮");
-//        UIViewController *vc = [[UIViewController alloc]init];
-//        vc.view.backgroundColor = [UIColor blueColor];
-//        
-//        vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-//        [self presentModalViewController:vc animated:YES];
         
     }];
     //   搜索
     [navBarView setCallBackSearchBtn:^{
          NSLog(@"搜索");
+        ZYSpeechViewController *jzSpeechVC = [[ZYSpeechViewController alloc] init];
+        [self.navigationController pushViewController:jzSpeechVC animated:YES];
     }];
     
     //    分段-左

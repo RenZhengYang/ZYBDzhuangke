@@ -49,10 +49,12 @@
         ZYNavigationController *nav = [[ZYNavigationController alloc]initWithRootViewController:vc];
         [self addChildViewController:nav];
     }else{
-        vc.tabBarItem.image = [UIImage imageOriginalWith:image];
+//        vc.tabBarItem.image = [UIImage imageOriginalWith:image];
         vc.title = title;
-        [self addChildViewController:vc];
-    }
+        ZYNavigationController *nav = [[ZYNavigationController alloc]initWithRootViewController:vc];
+        [self addChildViewController:nav];
+    
+          }
     
 }
 

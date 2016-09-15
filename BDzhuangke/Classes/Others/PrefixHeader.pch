@@ -7,10 +7,10 @@
 //
 
 
-#import "UIColor+Hex.h"
-
-
-
+#import "UIColor+Hex.h"      //  16进制颜色处理
+#import <AFNetworking.h>   // AFN
+#import "ZYNetTools.h"        //  处理网络请求工具类
+#import "Constant.h"
 // 2.获得RGB颜色
 #define RGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r, g, b)                        RGBA(r, g, b, 1.0f)

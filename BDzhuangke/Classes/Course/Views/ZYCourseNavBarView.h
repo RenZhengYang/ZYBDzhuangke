@@ -14,8 +14,10 @@
 @property(copy,nonatomic)void(^CallBackNameBtn)();
 /**搜索Btn*/
 @property(copy,nonatomic)void(^CallBackSearchBtn)();
-/**分段按钮的左边---精彩推荐*/
 @property(copy,nonatomic)void(^leftSegmentCtr)();
-/**分段按钮的右边---课程分类*/
 @property(copy,nonatomic)void(^rightSegmentCtr)();
+
+/**分段按钮*/
+@property(strong,nonatomic)UISegmentedControl *segmentCtr;
+
 @end

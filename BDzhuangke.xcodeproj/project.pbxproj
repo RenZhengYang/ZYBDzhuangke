@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040300881D8670A000359C7B /* JZSchoolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040300871D8670A000359C7B /* JZSchoolModel.m */; };
+		0403008B1D86929900359C7B /* JZSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403008A1D86929900359C7B /* JZSchoolCell.m */; };
+		0403008E1D869A4A00359C7B /* ZYAllCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403008D1D869A4A00359C7B /* ZYAllCourseViewController.m */; };
+		040300911D86A17400359C7B /* JZAllCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040300901D86A17400359C7B /* JZAllCourseCell.m */; };
+		040300941D86A25600359C7B /* JZAllCourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040300931D86A25600359C7B /* JZAllCourseModel.m */; };
+		040300971D86A2AB00359C7B /* JZCateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040300961D86A2AB00359C7B /* JZCateModel.m */; };
+		04031E7F1D83AD0C00D6232C /* ZYCourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E7E1D83AD0C00D6232C /* ZYCourseDetailViewController.m */; };
+		04031E821D83B35800D6232C /* ZYCateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E811D83B35800D6232C /* ZYCateViewController.m */; };
+		04031E841D83B55300D6232C /* classCategory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04031E831D83B55300D6232C /* classCategory.plist */; };
+		04031E881D84188F00D6232C /* JZCourseDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E871D84188F00D6232C /* JZCourseDetailModel.m */; };
+		04031E8B1D841A3F00D6232C /* JZStepListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E8A1D841A3F00D6232C /* JZStepListModel.m */; };
+		04031E8E1D841B3400D6232C /* JZClassListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E8D1D841B3400D6232C /* JZClassListModel.m */; };
+		04031E911D843E0B00D6232C /* ZYCourseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E901D843E0B00D6232C /* ZYCourseInfoViewController.m */; };
+		04031E941D843F8700D6232C /* ZYCourseEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E931D843F8700D6232C /* ZYCourseEvaluationViewController.m */; };
+		04031E971D84454E00D6232C /* ZYCourseDetailInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E961D84454E00D6232C /* ZYCourseDetailInfoCell.m */; };
+		04031E9A1D84525100D6232C /* ZYCourseClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E991D84525100D6232C /* ZYCourseClassCell.m */; };
+		04031E9D1D84609B00D6232C /* ZYSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E9C1D84609B00D6232C /* ZYSchoolViewController.m */; };
+		04031EA01D8468DB00D6232C /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 04031E9F1D8468DB00D6232C /* NSString+Size.m */; };
 		040D7F291D810351002C5AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F281D810351002C5AB4 /* main.m */; };
 		040D7F671D8113DC002C5AB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F5F1D8113DC002C5AB4 /* AppDelegate.m */; };
 		040D7F681D8113DC002C5AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040D7F601D8113DC002C5AB4 /* Assets.xcassets */; };
@@ -15,6 +33,18 @@
 		040D7F6F1D81149B002C5AB4 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F6E1D81149B002C5AB4 /* UIImage+Image.m */; };
 		040D7F721D8114B0002C5AB4 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F711D8114B0002C5AB4 /* UIColor+Hex.m */; };
 		040D7F7C1D81161D002C5AB4 /* ZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F771D81161D002C5AB4 /* ZYNavigationController.m */; };
+		0458429C1D84F08B00DEA94C /* JZEvalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458429B1D84F08B00DEA94C /* JZEvalModel.m */; };
+		0458429F1D84FE2D00DEA94C /* JZEvalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458429E1D84FE2D00DEA94C /* JZEvalCell.m */; };
+		0474EF0A1D826FF100570AA2 /* ZYNetTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF091D826FF100570AA2 /* ZYNetTools.m */; };
+		0474EF111D82A3AC00570AA2 /* JZFocusListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF0C1D82A3AC00570AA2 /* JZFocusListModel.m */; };
+		0474EF121D82A3AC00570AA2 /* JZCourseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF0E1D82A3AC00570AA2 /* JZCourseListModel.m */; };
+		0474EF131D82A3AC00570AA2 /* JZAlbumListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF101D82A3AC00570AA2 /* JZAlbumListModel.m */; };
+		0474EF161D82E32B00570AA2 /* iCategoryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0474EF141D82E32B00570AA2 /* iCategoryList.plist */; };
+		0474EF171D82E32B00570AA2 /* InfoConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0474EF151D82E32B00570AA2 /* InfoConfig.plist */; };
+		0474EF1D1D82E7B600570AA2 /* ImageScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF191D82E7B600570AA2 /* ImageScrollCell.m */; };
+		0474EF1E1D82E7B600570AA2 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF1B1D82E7B600570AA2 /* ImageScrollView.m */; };
+		0474EF211D82F11F00570AA2 /* JZAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF201D82F11F00570AA2 /* JZAlbumCell.m */; };
+		0474EF241D82F22700570AA2 /* JZCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474EF231D82F22700570AA2 /* JZCourseCell.m */; };
 		04EC4D821D81186F00425CBD /* ZYTabBarVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D811D81186F00425CBD /* ZYTabBarVc.m */; };
 		04EC4D861D811D3B00425CBD /* ZYCateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D851D811D3B00425CBD /* ZYCateTableViewController.m */; };
 		04EC4D891D811D7800425CBD /* ZYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC4D881D811D7800425CBD /* ZYMineViewController.m */; };
@@ -25,6 +55,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040300861D8670A000359C7B /* JZSchoolModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSchoolModel.h; sourceTree = "<group>"; };
+		040300871D8670A000359C7B /* JZSchoolModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSchoolModel.m; sourceTree = "<group>"; };
+		040300891D86929900359C7B /* JZSchoolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSchoolCell.h; sourceTree = "<group>"; };
+		0403008A1D86929900359C7B /* JZSchoolCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSchoolCell.m; sourceTree = "<group>"; };
+		0403008C1D869A4A00359C7B /* ZYAllCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAllCourseViewController.h; sourceTree = "<group>"; };
+		0403008D1D869A4A00359C7B /* ZYAllCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAllCourseViewController.m; sourceTree = "<group>"; };
+		0403008F1D86A17400359C7B /* JZAllCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAllCourseCell.h; sourceTree = "<group>"; };
+		040300901D86A17400359C7B /* JZAllCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAllCourseCell.m; sourceTree = "<group>"; };
+		040300921D86A25600359C7B /* JZAllCourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAllCourseModel.h; sourceTree = "<group>"; };
+		040300931D86A25600359C7B /* JZAllCourseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAllCourseModel.m; sourceTree = "<group>"; };
+		040300951D86A2AB00359C7B /* JZCateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZCateModel.h; sourceTree = "<group>"; };
+		040300961D86A2AB00359C7B /* JZCateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZCateModel.m; sourceTree = "<group>"; };
+		04031E7D1D83AD0C00D6232C /* ZYCourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCourseDetailViewController.h; sourceTree = "<group>"; };
+		04031E7E1D83AD0C00D6232C /* ZYCourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCourseDetailViewController.m; sourceTree = "<group>"; };
+		04031E801D83B35800D6232C /* ZYCateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCateViewController.h; sourceTree = "<group>"; };
+		04031E811D83B35800D6232C /* ZYCateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCateViewController.m; sourceTree = "<group>"; };
+		04031E831D83B55300D6232C /* classCategory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = classCategory.plist; sourceTree = "<group>"; };
+		04031E851D8411E300D6232C /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = "../../../../../Desktop/chuanke-master/chuanke/Others/3tdParts/LoopView/Constant.h"; sourceTree = "<group>"; };
+		04031E861D84188F00D6232C /* JZCourseDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZCourseDetailModel.h; sourceTree = "<group>"; };
+		04031E871D84188F00D6232C /* JZCourseDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZCourseDetailModel.m; sourceTree = "<group>"; };
+		04031E891D841A3F00D6232C /* JZStepListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZStepListModel.h; sourceTree = "<group>"; };
+		04031E8A1D841A3F00D6232C /* JZStepListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZStepListModel.m; sourceTree = "<group>"; };
+		04031E8C1D841B3400D6232C /* JZClassListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZClassListModel.h; sourceTree = "<group>"; };
+		04031E8D1D841B3400D6232C /* JZClassListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZClassListModel.m; sourceTree = "<group>"; };
+		04031E8F1D843E0B00D6232C /* ZYCourseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCourseInfoViewController.h; sourceTree = "<group>"; };
+		04031E901D843E0B00D6232C /* ZYCourseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCourseInfoViewController.m; sourceTree = "<group>"; };
+		04031E921D843F8700D6232C /* ZYCourseEvaluationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCourseEvaluationViewController.h; sourceTree = "<group>"; };
+		04031E931D843F8700D6232C /* ZYCourseEvaluationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCourseEvaluationViewController.m; sourceTree = "<group>"; };
+		04031E951D84454E00D6232C /* ZYCourseDetailInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCourseDetailInfoCell.h; sourceTree = "<group>"; };
+		04031E961D84454E00D6232C /* ZYCourseDetailInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCourseDetailInfoCell.m; sourceTree = "<group>"; };
+		04031E981D84525100D6232C /* ZYCourseClassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCourseClassCell.h; sourceTree = "<group>"; };
+		04031E991D84525100D6232C /* ZYCourseClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCourseClassCell.m; sourceTree = "<group>"; };
+		04031E9B1D84609B00D6232C /* ZYSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSchoolViewController.h; sourceTree = "<group>"; };
+		04031E9C1D84609B00D6232C /* ZYSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSchoolViewController.m; sourceTree = "<group>"; };
+		04031E9E1D8468DB00D6232C /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		04031E9F1D8468DB00D6232C /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		040D7F241D810351002C5AB4 /* BDzhuangke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDzhuangke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040D7F281D810351002C5AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		040D7F381D810351002C5AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +105,28 @@
 		040D7F711D8114B0002C5AB4 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		040D7F761D81161D002C5AB4 /* ZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNavigationController.h; sourceTree = "<group>"; };
 		040D7F771D81161D002C5AB4 /* ZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNavigationController.m; sourceTree = "<group>"; };
+		0458429A1D84F08B00DEA94C /* JZEvalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEvalModel.h; sourceTree = "<group>"; };
+		0458429B1D84F08B00DEA94C /* JZEvalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEvalModel.m; sourceTree = "<group>"; };
+		0458429D1D84FE2D00DEA94C /* JZEvalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEvalCell.h; sourceTree = "<group>"; };
+		0458429E1D84FE2D00DEA94C /* JZEvalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEvalCell.m; sourceTree = "<group>"; };
+		0474EF081D826FF100570AA2 /* ZYNetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetTools.h; sourceTree = "<group>"; };
+		0474EF091D826FF100570AA2 /* ZYNetTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNetTools.m; sourceTree = "<group>"; };
+		0474EF0B1D82A3AC00570AA2 /* JZFocusListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFocusListModel.h; sourceTree = "<group>"; };
+		0474EF0C1D82A3AC00570AA2 /* JZFocusListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFocusListModel.m; sourceTree = "<group>"; };
+		0474EF0D1D82A3AC00570AA2 /* JZCourseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZCourseListModel.h; sourceTree = "<group>"; };
+		0474EF0E1D82A3AC00570AA2 /* JZCourseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZCourseListModel.m; sourceTree = "<group>"; };
+		0474EF0F1D82A3AC00570AA2 /* JZAlbumListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAlbumListModel.h; sourceTree = "<group>"; };
+		0474EF101D82A3AC00570AA2 /* JZAlbumListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAlbumListModel.m; sourceTree = "<group>"; };
+		0474EF141D82E32B00570AA2 /* iCategoryList.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = iCategoryList.plist; sourceTree = "<group>"; };
+		0474EF151D82E32B00570AA2 /* InfoConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = InfoConfig.plist; sourceTree = "<group>"; };
+		0474EF181D82E7B600570AA2 /* ImageScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollCell.h; sourceTree = "<group>"; };
+		0474EF191D82E7B600570AA2 /* ImageScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollCell.m; sourceTree = "<group>"; };
+		0474EF1A1D82E7B600570AA2 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		0474EF1B1D82E7B600570AA2 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
+		0474EF1F1D82F11F00570AA2 /* JZAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAlbumCell.h; sourceTree = "<group>"; };
+		0474EF201D82F11F00570AA2 /* JZAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAlbumCell.m; sourceTree = "<group>"; };
+		0474EF221D82F22700570AA2 /* JZCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZCourseCell.h; sourceTree = "<group>"; };
+		0474EF231D82F22700570AA2 /* JZCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZCourseCell.m; sourceTree = "<group>"; };
 		04EC4D801D81186F00425CBD /* ZYTabBarVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBarVc.h; sourceTree = "<group>"; };
 		04EC4D811D81186F00425CBD /* ZYTabBarVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarVc.m; sourceTree = "<group>"; };
 		04EC4D831D81190600425CBD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -134,6 +222,18 @@
 				04EC4D851D811D3B00425CBD /* ZYCateTableViewController.m */,
 				04EC4D931D819B0A00425CBD /* ZYSpeechViewController.h */,
 				04EC4D941D819B0A00425CBD /* ZYSpeechViewController.m */,
+				04031E7D1D83AD0C00D6232C /* ZYCourseDetailViewController.h */,
+				04031E7E1D83AD0C00D6232C /* ZYCourseDetailViewController.m */,
+				04031E8F1D843E0B00D6232C /* ZYCourseInfoViewController.h */,
+				04031E901D843E0B00D6232C /* ZYCourseInfoViewController.m */,
+				04031E921D843F8700D6232C /* ZYCourseEvaluationViewController.h */,
+				04031E931D843F8700D6232C /* ZYCourseEvaluationViewController.m */,
+				04031E9B1D84609B00D6232C /* ZYSchoolViewController.h */,
+				04031E9C1D84609B00D6232C /* ZYSchoolViewController.m */,
+				0403008C1D869A4A00359C7B /* ZYAllCourseViewController.h */,
+				0403008D1D869A4A00359C7B /* ZYAllCourseViewController.m */,
+				04031E801D83B35800D6232C /* ZYCateViewController.h */,
+				04031E811D83B35800D6232C /* ZYCateViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +241,29 @@
 		040D7F4B1D8113DC002C5AB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0474EF141D82E32B00570AA2 /* iCategoryList.plist */,
+				04031E831D83B55300D6232C /* classCategory.plist */,
+				0474EF151D82E32B00570AA2 /* InfoConfig.plist */,
+				0474EF0B1D82A3AC00570AA2 /* JZFocusListModel.h */,
+				0474EF0C1D82A3AC00570AA2 /* JZFocusListModel.m */,
+				0474EF0D1D82A3AC00570AA2 /* JZCourseListModel.h */,
+				0474EF0E1D82A3AC00570AA2 /* JZCourseListModel.m */,
+				0474EF0F1D82A3AC00570AA2 /* JZAlbumListModel.h */,
+				0474EF101D82A3AC00570AA2 /* JZAlbumListModel.m */,
+				04031E861D84188F00D6232C /* JZCourseDetailModel.h */,
+				04031E871D84188F00D6232C /* JZCourseDetailModel.m */,
+				04031E891D841A3F00D6232C /* JZStepListModel.h */,
+				04031E8A1D841A3F00D6232C /* JZStepListModel.m */,
+				04031E8C1D841B3400D6232C /* JZClassListModel.h */,
+				04031E8D1D841B3400D6232C /* JZClassListModel.m */,
+				0458429A1D84F08B00DEA94C /* JZEvalModel.h */,
+				0458429B1D84F08B00DEA94C /* JZEvalModel.m */,
+				040300861D8670A000359C7B /* JZSchoolModel.h */,
+				040300871D8670A000359C7B /* JZSchoolModel.m */,
+				040300921D86A25600359C7B /* JZAllCourseModel.h */,
+				040300931D86A25600359C7B /* JZAllCourseModel.m */,
+				040300951D86A2AB00359C7B /* JZCateModel.h */,
+				040300961D86A2AB00359C7B /* JZCateModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +273,20 @@
 			children = (
 				04EC4D8D1D8126B100425CBD /* ZYCourseNavBarView.h */,
 				04EC4D8E1D8126B100425CBD /* ZYCourseNavBarView.m */,
+				0474EF1F1D82F11F00570AA2 /* JZAlbumCell.h */,
+				0474EF201D82F11F00570AA2 /* JZAlbumCell.m */,
+				0474EF221D82F22700570AA2 /* JZCourseCell.h */,
+				0474EF231D82F22700570AA2 /* JZCourseCell.m */,
+				04031E951D84454E00D6232C /* ZYCourseDetailInfoCell.h */,
+				04031E961D84454E00D6232C /* ZYCourseDetailInfoCell.m */,
+				04031E981D84525100D6232C /* ZYCourseClassCell.h */,
+				04031E991D84525100D6232C /* ZYCourseClassCell.m */,
+				0458429D1D84FE2D00DEA94C /* JZEvalCell.h */,
+				0458429E1D84FE2D00DEA94C /* JZEvalCell.m */,
+				040300891D86929900359C7B /* JZSchoolCell.h */,
+				0403008A1D86929900359C7B /* JZSchoolCell.m */,
+				0403008F1D86A17400359C7B /* JZAllCourseCell.h */,
+				040300901D86A17400359C7B /* JZAllCourseCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +360,8 @@
 		040D7F5D1D8113DC002C5AB4 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				04031E851D8411E300D6232C /* Constant.h */,
+				0474EF1C1D82E7B600570AA2 /* LoopView */,
 				04EC4D831D81190600425CBD /* PrefixHeader.pch */,
 				0474EF071D826DAB00570AA2 /* Tools */,
 				040D7F6B1D811484002C5AB4 /* Cateroy */,
@@ -239,6 +378,8 @@
 		040D7F6B1D811484002C5AB4 /* Cateroy */ = {
 			isa = PBXGroup;
 			children = (
+				04031E9E1D8468DB00D6232C /* NSString+Size.h */,
+				04031E9F1D8468DB00D6232C /* NSString+Size.m */,
 			);
 			path = Cateroy;
 			sourceTree = "<group>";
@@ -293,8 +434,22 @@
 		0474EF071D826DAB00570AA2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0474EF081D826FF100570AA2 /* ZYNetTools.h */,
+				0474EF091D826FF100570AA2 /* ZYNetTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		0474EF1C1D82E7B600570AA2 /* LoopView */ = {
+			isa = PBXGroup;
+			children = (
+				0474EF181D82E7B600570AA2 /* ImageScrollCell.h */,
+				0474EF191D82E7B600570AA2 /* ImageScrollCell.m */,
+				0474EF1A1D82E7B600570AA2 /* ImageScrollView.h */,
+				0474EF1B1D82E7B600570AA2 /* ImageScrollView.m */,
+			);
+			name = LoopView;
+			path = "../../../../../Desktop/chuanke-master/chuanke/Others/3tdParts/LoopView";
 			sourceTree = "<group>";
 		};
 		3E944060E4CC601AD39E3B1A /* Frameworks */ = {
@@ -348,6 +503,7 @@
 				TargetAttributes = {
 					040D7F231D810351002C5AB4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DFARS7X79T;
 					};
 				};
 			};
@@ -374,9 +530,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0474EF161D82E32B00570AA2 /* iCategoryList.plist in Resources */,
 				040D7F6A1D8113DC002C5AB4 /* Main.storyboard in Resources */,
 				040D7F681D8113DC002C5AB4 /* Assets.xcassets in Resources */,
+				0474EF171D82E32B00570AA2 /* InfoConfig.plist in Resources */,
 				040D7F691D8113DC002C5AB4 /* LaunchScreen.storyboard in Resources */,
+				04031E841D83B55300D6232C /* classCategory.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,17 +594,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04031E9A1D84525100D6232C /* ZYCourseClassCell.m in Sources */,
+				0403008B1D86929900359C7B /* JZSchoolCell.m in Sources */,
 				04EC4D861D811D3B00425CBD /* ZYCateTableViewController.m in Sources */,
+				04031E9D1D84609B00D6232C /* ZYSchoolViewController.m in Sources */,
+				04031E8B1D841A3F00D6232C /* JZStepListModel.m in Sources */,
+				04031EA01D8468DB00D6232C /* NSString+Size.m in Sources */,
 				040D7F291D810351002C5AB4 /* main.m in Sources */,
 				040D7F721D8114B0002C5AB4 /* UIColor+Hex.m in Sources */,
+				040300971D86A2AB00359C7B /* JZCateModel.m in Sources */,
+				04031E941D843F8700D6232C /* ZYCourseEvaluationViewController.m in Sources */,
 				040D7F6F1D81149B002C5AB4 /* UIImage+Image.m in Sources */,
 				04EC4D8F1D8126B100425CBD /* ZYCourseNavBarView.m in Sources */,
 				04EC4D891D811D7800425CBD /* ZYMineViewController.m in Sources */,
+				0474EF121D82A3AC00570AA2 /* JZCourseListModel.m in Sources */,
+				0474EF131D82A3AC00570AA2 /* JZAlbumListModel.m in Sources */,
+				0458429C1D84F08B00DEA94C /* JZEvalModel.m in Sources */,
+				0474EF0A1D826FF100570AA2 /* ZYNetTools.m in Sources */,
+				0403008E1D869A4A00359C7B /* ZYAllCourseViewController.m in Sources */,
+				040300881D8670A000359C7B /* JZSchoolModel.m in Sources */,
+				04031E821D83B35800D6232C /* ZYCateViewController.m in Sources */,
+				04031E911D843E0B00D6232C /* ZYCourseInfoViewController.m in Sources */,
+				040300941D86A25600359C7B /* JZAllCourseModel.m in Sources */,
 				040D7F7C1D81161D002C5AB4 /* ZYNavigationController.m in Sources */,
 				04EC4D951D819B0A00425CBD /* ZYSpeechViewController.m in Sources */,
+				0458429F1D84FE2D00DEA94C /* JZEvalCell.m in Sources */,
+				0474EF211D82F11F00570AA2 /* JZAlbumCell.m in Sources */,
 				040D7F671D8113DC002C5AB4 /* AppDelegate.m in Sources */,
 				04EC4D821D81186F00425CBD /* ZYTabBarVc.m in Sources */,
+				040300911D86A17400359C7B /* JZAllCourseCell.m in Sources */,
 				04EC4D8C1D811DE000425CBD /* ZYDownLoadViewController.m in Sources */,
+				04031E971D84454E00D6232C /* ZYCourseDetailInfoCell.m in Sources */,
+				0474EF1D1D82E7B600570AA2 /* ImageScrollCell.m in Sources */,
+				0474EF1E1D82E7B600570AA2 /* ImageScrollView.m in Sources */,
+				0474EF111D82A3AC00570AA2 /* JZFocusListModel.m in Sources */,
+				04031E8E1D841B3400D6232C /* JZClassListModel.m in Sources */,
+				0474EF241D82F22700570AA2 /* JZCourseCell.m in Sources */,
+				04031E7F1D83AD0C00D6232C /* ZYCourseDetailViewController.m in Sources */,
+				04031E881D84188F00D6232C /* JZCourseDetailModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,12 +748,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BDzhuangke/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = BDzhuangke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhengyang.BDzhuangke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -579,12 +767,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BDzhuangke/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = BDzhuangke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhengyang.BDzhuangke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

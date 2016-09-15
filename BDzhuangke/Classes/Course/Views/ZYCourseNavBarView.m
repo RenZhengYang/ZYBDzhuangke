@@ -15,8 +15,7 @@
 @property(strong,nonatomic)UIButton *nameBtn;
 /**搜索按钮*/
 @property(strong,nonatomic)UIButton *searchBtn;
-/**分段按钮*/
-@property(strong,nonatomic)UISegmentedControl *segmentCtr;
+@property(assign,nonatomic)NSInteger type;
 @end
 
 @implementation ZYCourseNavBarView
@@ -77,18 +76,21 @@
     self.segmentCtr = [[UISegmentedControl alloc] initWithItems:segmentArray];
     _segmentCtr.selectedSegmentIndex = 0;   //   设置默认选项为 0
     
-        //   利用富文本设置字体
-             //    正常情况下
+    //   利用富文本设置字体
+    //    正常情况下
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:15],NSFontAttributeName,[UIColor whiteColor],NSForegroundColorAttributeName,nil];
     [_segmentCtr setTitleTextAttributes:attributes forState:UIControlStateNormal];
-            //     高亮状态下--选中状态下
+    //     高亮状态下--选中状态下
     NSDictionary *highlightedAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     [_segmentCtr setTitleTextAttributes:highlightedAttributes forState:UIControlStateSelected];
     
     _segmentCtr.tintColor = RGB(46, 158, 138);
-    
+    _segmentCtr.frame = CGRectMake(36, 64, screen_width-36*2, 30);
     [_segmentCtr addTarget:self action:@selector(OnTapSegmentCtr:) forControlEvents:UIControlEventValueChanged];
     [self addSubview:_segmentCtr];
+    
+
+    
 }
 
 - (void)layoutSubviews
@@ -97,7 +99,7 @@
     _nameBtn.frame = CGRectMake(10, 20, 60, 40);
     _titleLab.frame = CGRectMake(screen_width/2-80, 20, 160, 30);
     _searchBtn.frame = CGRectMake(screen_width-10-40, 20, 40, 40);
-    _segmentCtr.frame = CGRectMake(36, 64, screen_width-36*2, 30);
+    
     
 }
 #pragma 按钮的点击事件
@@ -115,13 +117,15 @@
 
 #pragma mark- _segmentCtr的响应事件
 - (void)OnTapSegmentCtr:(UISegmentedControl *)seg
-{
-      if(seg.selectedSegmentIndex == 0){
-                _leftSegmentCtr();
-      }else{
-          _rightSegmentCtr();
-      
-      }
-    
+{     NSInteger index = seg.selectedSegmentIndex;
+    if(index == 0){
+        _leftSegmentCtr();
+        
+    }else{
+        _rightSegmentCtr();
+    }
+   
 }
+
+
 @end

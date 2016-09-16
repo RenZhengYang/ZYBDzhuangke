@@ -35,7 +35,7 @@
         [self getAllCourseData];
     });
     
-
+  
 }
 
 -(void)setNav{
@@ -64,7 +64,7 @@
 }
 
 -(void)OnTapCollectBtn:(UIButton *)sender{
-    
+    [self.view endEditing:YES];
 }
 
 -(void)initTableview{

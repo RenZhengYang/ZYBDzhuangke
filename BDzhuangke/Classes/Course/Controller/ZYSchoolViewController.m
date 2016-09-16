@@ -14,6 +14,13 @@
 #import "JZSchoolCell.h"
 #import "UIImageView+WebCache.h"
 #import "ZYAllCourseViewController.h"
+#import "JSShareView.h"
+
+
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
+
+NSUInteger typeUI = 0;
 @interface ZYSchoolViewController ()<UITableViewDataSource,UITableViewDelegate,JZSchoolDelegate>
 {
     JZSchoolModel *_jzSchoolM;
@@ -313,8 +320,89 @@
         [self.navigationController pushViewController:jzAllCourseVC animated:YES];
     }else if (index == 2){
 //        [UMSocialSnsService presentSnsIconSheetView:self appKey:UMAPPKEY shareText:@"在美国被禁的网站，请偷偷看" shareImage:[UIImage imageNamed:@"channel_icon_foreign_unpre"] shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToWechatTimeline,UMShareToWechatSession, nil] delegate:self];
+        
+//        //        1、创建分享参数
+//        NSArray* imageArray = @[[UIImage imageNamed:@"channel_icon_foreign_unpre"]];
+//
+//        
+//        if (imageArray) {
+//            
+//            NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+//            [shareParams SSDKSetupShareParamsByText:@"分享内容"
+//                                                                            images:imageArray
+//                                                                                    url:[NSURL URLWithString:@"http://mob.com"]
+//                                                                                    title:@"分享标题"
+//                                                                                    type:SSDKContentTypeAuto];
+//            
+//            
+//            [ShareSDK showShareActionSheet:nil items:nil shareParams:shareParams onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
+//                
+//                switch (state) {
+//                    case SSDKResponseStateSuccess:{
+//                        
+//                        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享成功"
+//                                                                                                                                         message:nil
+//                                                                                                                                        delegate:nil
+//                                                                                                                               cancelButtonTitle:@"确定"
+//                                                                                                                               otherButtonTitles:nil];
+//                                                                                                                      [alertView show];
+//
+//                               break;
+//                    }
+//                        
+//                    case SSDKResponseStateFail:{
+//                        
+//                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败"
+//                                                                        message:[NSString stringWithFormat:@"%@",error]
+//                                                                       delegate:nil
+//                                                              cancelButtonTitle:@"OK"
+//                                                              otherButtonTitles:nil, nil];
+//                        [alert show];
+//                        break;
+//                    
+//                    }
+//                        
+//                    default:
+//                        break;
+//                }
+//                
+//              
+//            }];
+//            
+//        
+//        }
+//        
+//
+        [self test];
+        
     }
 }
 
+
+- (void)test{
+
+
+//        1、创建分享参数
+NSArray* imageArray = @[[UIImage imageNamed:@"channel_icon_foreign_unpre"]];
+
+
+       if(imageArray){
+        
+        
+        
+                            [JSShareView showShareViewWithPublishContent:@{@"text" :@"nil",
+                                                                           @"image":@"channel_icon_foreign_unpre ",
+                                                                           @"url"  :@"www.baidu.com"}
+                                                                  Result:^(ShareType type, BOOL isSuccess) {
+                                                                      //回调
+//                                                                      [ShareSDK sha];
+                                                                      
+                                                                  }];
+        
+        
+        
+    };
+
+}
 
 @end

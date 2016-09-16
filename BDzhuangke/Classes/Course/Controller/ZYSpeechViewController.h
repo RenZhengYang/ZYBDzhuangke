@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ZYSpeechViewController : UIViewController
+@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

@@ -15,7 +15,7 @@
 #import "ZYCourseDetailInfoCell.h"
 #import "ZYCourseClassCell.h"
 #import "ZYSchoolViewController.h"
-
+#import "VedioDetailViewController.h"
 #import <MJExtension.h>
 #import <MJRefresh.h>
 #import <SVProgressHUD.h>
@@ -389,6 +389,30 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    if ([_dataSourceArray[indexPath.row] isKindOfClass:[JZClassListModel class]]) {
+        
+        JZClassListModel *jzClassM = _dataSourceArray[indexPath.row];
+        if (jzClassM.VideoUrl == nil) {
+            [SVProgressHUD showErrorWithStatus:@"当前课程视频暂时没有"];
+            
+            return;
+        }
+        
+        
+        NSString *fileUrl = [jzClassM.VideoUrl[0] objectForKey:@"FileURL"];
+        NSLog(@"fileUrl:%@",fileUrl);
+        
+        VedioDetailViewController *vedioVC = [[VedioDetailViewController alloc] init];
+        //        vedioVC.FileUrl = fileUrl;
+        vedioVC.FileUrl = @"http://ws.v.chuanke.com/vedio/9/39/04/93904a21f0e5f881868b5a45597240e7.enc.flv";
+        [self.navigationController pushViewController:vedioVC animated:YES];
+    }
+
+}
 #pragma mark - JZCourseDetailInfoDelegate
 -(void)didSelectedSchool{
     ZYSchoolViewController *jzSchoolVC = [[ZYSchoolViewController alloc] init];

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZYTabBarVc.h"
-
+#import "JSRegisterManager.h"
 @interface AppDelegate ()
 
 @end
@@ -25,6 +25,15 @@
    self.window.rootViewController = tabBarVc;
     
     [self.window makeKeyAndVisible];
+    
+    
+    
+    
+    JSRegisterManager *registerManager = [[JSRegisterManager alloc] init];
+    [registerManager finishLaunchOption:launchOptions];
+
+    
+
     
     return YES;
 }

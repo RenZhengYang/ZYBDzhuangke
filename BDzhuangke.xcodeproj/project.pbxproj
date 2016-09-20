@@ -42,6 +42,20 @@
 		040973DF1D8C108500A3D9C9 /* zoomout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040973CE1D8C108500A3D9C9 /* zoomout@2x.png */; };
 		040973E21D8C111E00A3D9C9 /* VedioDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040973E11D8C111E00A3D9C9 /* VedioDetailViewController.m */; };
 		040973E51D8C362A00A3D9C9 /* ZYKeDaRegisterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 040973E41D8C362A00A3D9C9 /* ZYKeDaRegisterManager.m */; };
+		040973E71D8C3A2A00A3D9C9 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973E61D8C3A2A00A3D9C9 /* iflyMSC.framework */; };
+		040973E91D8C3A8200A3D9C9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973E81D8C3A8200A3D9C9 /* libz.tbd */; };
+		040973EB1D8C3AA700A3D9C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973EA1D8C3AA700A3D9C9 /* CoreTelephony.framework */; };
+		040973ED1D8C41AA00A3D9C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973EC1D8C41A900A3D9C9 /* CoreLocation.framework */; };
+		040973EF1D8C41B900A3D9C9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973EE1D8C41B900A3D9C9 /* AVFoundation.framework */; };
+		040973F11D8C41CB00A3D9C9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973F01D8C41CB00A3D9C9 /* AddressBook.framework */; };
+		040973F31D8C41D800A3D9C9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973F21D8C41D800A3D9C9 /* AudioToolbox.framework */; };
+		040973F51D8C41E300A3D9C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973F41D8C41E300A3D9C9 /* SystemConfiguration.framework */; };
+		040973F71D8C41ED00A3D9C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973F61D8C41ED00A3D9C9 /* QuartzCore.framework */; };
+		040973F91D8C41F500A3D9C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973F81D8C41F500A3D9C9 /* UIKit.framework */; };
+		040973FB1D8C41FF00A3D9C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973FA1D8C41FF00A3D9C9 /* Foundation.framework */; };
+		040973FD1D8C420700A3D9C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973FC1D8C420700A3D9C9 /* CoreGraphics.framework */; };
+		040973FF1D8C422700A3D9C9 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 040973FE1D8C422700A3D9C9 /* libc++.tbd */; };
+		040974011D8C437B00A3D9C9 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040974001D8C437B00A3D9C9 /* iflyMSC.framework */; };
 		040D7F291D810351002C5AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F281D810351002C5AB4 /* main.m */; };
 		040D7F671D8113DC002C5AB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D7F5F1D8113DC002C5AB4 /* AppDelegate.m */; };
 		040D7F681D8113DC002C5AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040D7F601D8113DC002C5AB4 /* Assets.xcassets */; };
@@ -132,6 +146,20 @@
 		040973E11D8C111E00A3D9C9 /* VedioDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioDetailViewController.m; sourceTree = "<group>"; };
 		040973E31D8C362A00A3D9C9 /* ZYKeDaRegisterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYKeDaRegisterManager.h; sourceTree = "<group>"; };
 		040973E41D8C362A00A3D9C9 /* ZYKeDaRegisterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYKeDaRegisterManager.m; sourceTree = "<group>"; };
+		040973E61D8C3A2A00A3D9C9 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = ../../Desktop/iOS_voice_1135_57dc01e8/lib/iflyMSC.framework; sourceTree = "<group>"; };
+		040973E81D8C3A8200A3D9C9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		040973EA1D8C3AA700A3D9C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		040973EC1D8C41A900A3D9C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		040973EE1D8C41B900A3D9C9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		040973F01D8C41CB00A3D9C9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		040973F21D8C41D800A3D9C9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		040973F41D8C41E300A3D9C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		040973F61D8C41ED00A3D9C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		040973F81D8C41F500A3D9C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		040973FA1D8C41FF00A3D9C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		040973FC1D8C420700A3D9C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		040973FE1D8C422700A3D9C9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		040974001D8C437B00A3D9C9 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		040D7F241D810351002C5AB4 /* BDzhuangke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDzhuangke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040D7F281D810351002C5AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		040D7F381D810351002C5AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +227,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040973FF1D8C422700A3D9C9 /* libc++.tbd in Frameworks */,
+				040973FD1D8C420700A3D9C9 /* CoreGraphics.framework in Frameworks */,
+				040973FB1D8C41FF00A3D9C9 /* Foundation.framework in Frameworks */,
+				040974011D8C437B00A3D9C9 /* iflyMSC.framework in Frameworks */,
+				040973F91D8C41F500A3D9C9 /* UIKit.framework in Frameworks */,
+				040973F71D8C41ED00A3D9C9 /* QuartzCore.framework in Frameworks */,
+				040973F51D8C41E300A3D9C9 /* SystemConfiguration.framework in Frameworks */,
+				040973F31D8C41D800A3D9C9 /* AudioToolbox.framework in Frameworks */,
+				040973F11D8C41CB00A3D9C9 /* AddressBook.framework in Frameworks */,
+				040973EF1D8C41B900A3D9C9 /* AVFoundation.framework in Frameworks */,
+				040973ED1D8C41AA00A3D9C9 /* CoreLocation.framework in Frameworks */,
+				040973EB1D8C3AA700A3D9C9 /* CoreTelephony.framework in Frameworks */,
+				040973E91D8C3A8200A3D9C9 /* libz.tbd in Frameworks */,
+				040973E71D8C3A2A00A3D9C9 /* iflyMSC.framework in Frameworks */,
 				24ECCC8D29692AE2F2ACBC96 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +283,7 @@
 		040D7F1B1D810351002C5AB4 = {
 			isa = PBXGroup;
 			children = (
+				040974001D8C437B00A3D9C9 /* iflyMSC.framework */,
 				040D7F261D810351002C5AB4 /* BDzhuangke */,
 				040D7F251D810351002C5AB4 /* Products */,
 				B6FE4BA1F105044CCBEDB73A /* Pods */,
@@ -557,6 +600,19 @@
 		3E944060E4CC601AD39E3B1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				040973FE1D8C422700A3D9C9 /* libc++.tbd */,
+				040973FC1D8C420700A3D9C9 /* CoreGraphics.framework */,
+				040973FA1D8C41FF00A3D9C9 /* Foundation.framework */,
+				040973F81D8C41F500A3D9C9 /* UIKit.framework */,
+				040973F61D8C41ED00A3D9C9 /* QuartzCore.framework */,
+				040973F41D8C41E300A3D9C9 /* SystemConfiguration.framework */,
+				040973F21D8C41D800A3D9C9 /* AudioToolbox.framework */,
+				040973F01D8C41CB00A3D9C9 /* AddressBook.framework */,
+				040973EE1D8C41B900A3D9C9 /* AVFoundation.framework */,
+				040973EC1D8C41A900A3D9C9 /* CoreLocation.framework */,
+				040973EA1D8C3AA700A3D9C9 /* CoreTelephony.framework */,
+				040973E81D8C3A8200A3D9C9 /* libz.tbd */,
+				040973E61D8C3A2A00A3D9C9 /* iflyMSC.framework */,
 				E142C2BF9755C0B4E4CEA51A /* libPods.a */,
 			);
 			name = Frameworks;
@@ -817,7 +873,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -856,7 +912,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -872,6 +928,19 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/MOBFoundation\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Required\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Optional\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/KaKaoSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/RenRenSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Optional\"",
+					"$(inherited)",
+					"$(SRCROOT)/../../lib",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = BDzhuangke/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = BDzhuangke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -891,6 +960,19 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/MOBFoundation\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Required\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Optional\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/KaKaoSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/PlatformSDK/RenRenSDK\"",
+					"\"${PODS_ROOT}/ShareSDK3/ShareSDK/Support/Optional\"",
+					"$(inherited)",
+					"$(SRCROOT)/../../lib",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = BDzhuangke/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = BDzhuangke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

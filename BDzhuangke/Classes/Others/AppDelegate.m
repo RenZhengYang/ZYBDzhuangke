@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "ZYTabBarVc.h"
 #import "JSRegisterManager.h"
+
+#import "iflyMSC/iflyMSC.h"
+
 @interface AppDelegate ()
 
 @end
@@ -28,11 +31,18 @@
     
     
     
-    
     JSRegisterManager *registerManager = [[JSRegisterManager alloc] init];
     [registerManager finishLaunchOption:launchOptions];
 
-    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //科大讯飞语音初始化
+        //创建语音配置,appid必须要传入，仅执行一次则可
+        NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",@" 57dc01e8"];
+        
+        //所有服务启动前，需要确保执行createUtility
+        [IFlySpeechUtility createUtility:initString];
+    });
+
 
     
     return YES;

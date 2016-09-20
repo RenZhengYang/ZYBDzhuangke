@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZYSpeechViewController : UIViewController
+#import "iflyMSC/iflyMSC.h"
+@interface ZYSpeechViewController : UIViewController<IFlyRecognizerViewDelegate>
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) UITableView *tableView;
 
+
+@property (nonatomic, strong) IFlyRecognizerView *iflyRecognizerView;//带界面的识别对象
 @end

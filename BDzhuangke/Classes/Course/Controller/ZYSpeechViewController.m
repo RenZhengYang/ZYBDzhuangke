@@ -13,10 +13,15 @@
 #import "MJExtension.h"
 #import "ZYCourseDetailViewController.h"
 
-@interface ZYSpeechViewController ()<UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface ZYSpeechViewController ()<IFlySpeechSynthesizerDelegate,IFlySpeechRecognizerDelegate,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 {
-    UILabel *_textLabel;
+    
+    IFlySpeechSynthesizer * _iFlySpeechSynthesizer;
+    //不带界面的识别对象
+    IFlySpeechRecognizer *_iFlySpeechRecognizer;
 
+    UILabel *_textLabel;
+    NSString *_resultStr;
   NSMutableArray *_dataSourceArray;
 }
 @end
@@ -31,7 +36,7 @@
     [self initViews];
     [self initData];
     [self initTableView];
-    
+        [self initIFly];
     
 //    [self getData];
 }
@@ -134,7 +139,7 @@
 }
 -(void)OnTapVoice{
     _textLabel.text = @"";
-//    [self startBtn];
+    [self startBtn];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -178,6 +183,120 @@
     self.tableView.delegate = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableView];
+}
+
+//有界面
+-(void)initRecognizer{
+    //单例模式，UI的实例
+    if (_iflyRecognizerView == nil) {
+        //UI显示剧中
+        _iflyRecognizerView= [[IFlyRecognizerView alloc] initWithCenter:self.view.center];
+        
+        [_iflyRecognizerView setParameter:@"" forKey:[IFlySpeechConstant PARAMS]];
+        
+        //设置听写模式
+        [_iflyRecognizerView setParameter:@"iat" forKey:[IFlySpeechConstant IFLY_DOMAIN]];
+        
+    }
+    _iflyRecognizerView.delegate = self;
+    
+    if (_iflyRecognizerView != nil) {
+        //设置最长录音时间
+        [_iflyRecognizerView setParameter:@"30000" forKey:[IFlySpeechConstant SPEECH_TIMEOUT]];
+        //设置后端点 3000
+        [_iflyRecognizerView setParameter:@"3000" forKey:[IFlySpeechConstant VAD_EOS]];
+        //设置前端点   3000
+        [_iflyRecognizerView setParameter:@"3000" forKey:[IFlySpeechConstant VAD_BOS]];
+        //设置采样率，推荐使用16K    16000
+        [_iflyRecognizerView setParameter:@"16000" forKey:[IFlySpeechConstant SAMPLE_RATE]];
+        //        if ([instance.language isEqualToString:[IATConfig chinese]]) {
+        //            //设置语言   zh_cn
+        [_iflyRecognizerView setParameter:@"zh_cn" forKey:[IFlySpeechConstant LANGUAGE]];
+        //            //设置方言  mandarin
+        [_iflyRecognizerView setParameter:@"mandarin" forKey:[IFlySpeechConstant ACCENT]];
+        //        }else if ([instance.language isEqualToString:[IATConfig english]]) {
+        //            //设置语言
+        //            [_iflyRecognizerView setParameter:instance.language forKey:[IFlySpeechConstant LANGUAGE]];
+        //        }
+        //        //设置是否返回标点符号   0
+        [_iflyRecognizerView setParameter:@"0" forKey:[IFlySpeechConstant ASR_PTT]];
+        
+    }
+}
+
+
+
+/**
+ *  启动听写
+ */
+-(void)startBtn{
+    if (_iflyRecognizerView == nil) {
+        [self initRecognizer ];
+    }
+    //设置音频来源为麦克风
+    [_iflyRecognizerView setParameter:IFLY_AUDIO_SOURCE_MIC forKey:@"audio_source"];
+    
+    //设置听写结果格式为json
+    [_iflyRecognizerView setParameter:@"plain" forKey:[IFlySpeechConstant RESULT_TYPE]];
+    
+    //保存录音文件，保存在sdk工作路径中，如未设置工作路径，则默认保存在library/cache下
+    [_iflyRecognizerView setParameter:@"asr.pcm" forKey:[IFlySpeechConstant ASR_AUDIO_PATH]];
+    
+    [_iflyRecognizerView start];
+}
+
+
+
+
+
+///文字转语音
+-(void)initIFly{
+    //1.创建合成对象
+    _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
+    _iFlySpeechSynthesizer.delegate = self;
+    //2.设置合成参数
+    //设置在线工作方式
+    [_iFlySpeechSynthesizer setParameter:[IFlySpeechConstant TYPE_CLOUD]
+                                  forKey:[IFlySpeechConstant ENGINE_TYPE]];
+    //音量,取值范围 0~100
+    [_iFlySpeechSynthesizer setParameter:@"50" forKey: [IFlySpeechConstant VOLUME]]; //发音人,默认为”xiaoyan”,可以设置的参数列表可参考“合成发音人列表”
+    [_iFlySpeechSynthesizer setParameter:@"xiaoxin" forKey: [IFlySpeechConstant VOICE_NAME]]; //保存合成文件名,如不再需要,设置设置为nil或者为空表示取消,默认目录位于 library/cache下
+    [_iFlySpeechSynthesizer setParameter:@"tts.pcm" forKey: [IFlySpeechConstant TTS_AUDIO_PATH]];
+    //3.启动合成会话
+    //    [_iFlySpeechSynthesizer startSpeaking: @"喜欢你，那双眼动人，笑声更迷人，愿再可，轻抚你。你好,我是科大讯飞的小燕"];
+    [_iFlySpeechSynthesizer startSpeaking: @"我只是个小孩,干吗那么认真啊。不对,动感超人是这样笑的，5呼呼呼呼~~~~~~。"];
+}
+
+//听写
+-(void)speechRecognize{
+    //1.创建语音听写对象
+    _iFlySpeechRecognizer = [IFlySpeechRecognizer sharedInstance]; //设置听写模式
+    _iFlySpeechRecognizer.delegate = self;
+    [_iFlySpeechRecognizer setParameter:@"iat" forKey:[IFlySpeechConstant IFLY_DOMAIN]];
+    //2.设置听写参数
+    [_iFlySpeechRecognizer setParameter: @"iat" forKey: [IFlySpeechConstant IFLY_DOMAIN]];
+    //asr_audio_path是录音文件名,设置value为nil或者为空取消保存,默认保存目录在 Library/cache下。
+    [_iFlySpeechRecognizer setParameter:@"asrview.pcm" forKey:[IFlySpeechConstant ASR_AUDIO_PATH]];
+    //3.启动识别服务
+    [_iFlySpeechRecognizer startListening];//官网文档里有错误，不是start
+}
+
+#pragma mark - IFlySpeechSynthesizerDelegate
+//结束代理
+-(void)onCompleted:(IFlySpeechError *)error{
+    NSLog(@"onCompleted");
+}
+//合成开始
+- (void) onSpeakBegin{
+    NSLog(@"onSpeakBegin");
+}
+//合成缓冲进度
+- (void) onBufferProgress:(int) progress message:(NSString *)msg{
+    NSLog(@"onBufferProgress");
+}
+//合成播放进度
+- (void) onSpeakProgress:(int) progress{
+    //    NSLog(@"onSpeakProgress");
 }
 
 
